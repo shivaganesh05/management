@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+
+
+  
+.show {
+    display:block;
+    transition:800ms;
+    opacity:1;
+    }
+    
+    .show.active{
+    transform: translateY(100px) scale(0) rotateY(180deg);
+    opacity:0;}
+
+
+     
+      
+      .form-control {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      
+      .form-control label {
+        width: 20%;
+        padding-right: 20px;
+        margin-bottom: 5px;
+      }
+      
+      .form-control input[type="text"],
+      .form-control input[type="password"] {
+        width: 40%;
+        padding: 5px;
+      }
+      
+      button {
+        max-width: 150px;
+        padding: 5px 10px;
+      }
+      
+      @media screen and (max-width: 600px) {
+        body {
+          width: 90%;
+        }
+      
+        .errorMsg {
+          max-width: 100%;
+        }
+      
+        .form-control {
+          flex-direction: column;
+        }
+      
+        .form-control input[type="text"],
+        .form-control input[type="password"] {
+          width: inherit;
+        }
+      }
+      
