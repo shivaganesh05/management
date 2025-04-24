@@ -1,34 +1,32 @@
-import React from 'react'
+import React from 'react';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div className="group relative ">
+    <div className="group relative">
     
-      <button className=" text-white py-4 px-6 rounded inline-flex items-center group">
-        <span className="mr-1 ">Menu</span>
-        <svg
-          className="fill-current h-4 w-4 group-hover:rotate-180 transition-transform"
-          viewBox="0 0 20 20"
-        >
-          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-        </svg>
+      <button className=" pe-1 text-xl rounded inline-flex items-center group">
+        <span>Home</span>
+        <RiArrowDropDownLine className='inline-flex' />
       </button>
-      
-      {/* menu list */}
-      <ul className="rounded absolute hidden text-gray-700 pt-1 group-hover:block w-56 	">
-        <li className="bg-white rounded-t-md	   py-4 px-4 cursor-pointer">
-          Profile
+      <ul className="rounded absolute hidden text-gray-700 text-xl pt-4 group-hover:block w-40">
+        <li className="bg-white hover:text-[20px] text-[18px] py-2 px-2  border-b-2 cursor-pointer rounded-t-md">
+          Home1
         </li>
-        <li className="bg-white  py-4 px-4 cursor-pointer">
-          Settings
+        <li className="bg-white hover:text-[20px] text-[18px] py-2 px-2  border-b-2 cursor-pointer">
+          Home2
         </li>
-        <li className="bg-white  py-4 px-4 cursor-pointer rounded-b-md	">
-          Logout
+        <li className="bg-white hover:text-[20px] text-[18px] py-2 px-2  border-b-2 cursor-pointer">
+          Home3
+        </li>
+        <li className="bg-white hover:text-[20px] text-[18px] py-2 px-2  border-b-2 cursor-pointer">
+          Home4
+        </li>
+        <li className="bg-white hover:text-[20px] text-[18px] py-2 px-2  cursor-pointer rounded-b-md">
+          Home5
         </li>
       </ul>
       
     </div>
-  )
+  );
 }
-
-export default Home

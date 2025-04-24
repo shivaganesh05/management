@@ -1,5 +1,7 @@
+"use client"
+
 import React, { useState } from "react";
-import logo from "../assets/header-logo4.png";
+import logo from "../assets/logoimage1.png";
 // import slider1 from "../assets/slider1.jpg";
 import { HiSpeakerphone } from "react-icons/hi";
 import { FaRegUser } from "react-icons/fa";
@@ -8,38 +10,41 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
 import Home from "./Pages/Home";
 import PopUp from "./Pages/popup";
+import Course from "./Pages/Course";
+import Events from "./Pages/Events";
+import Page from "./Pages/Page";
+import Blog from "./Pages/Blog";
+import ImageSlider from "./ImageSlider";
 
 const NavbarPage = () => {
-  // const handlelosePopUp = (e) => {
-  //   if (e.target.id === 'ModelContainer') {
-  //     closePopUp();
-  //   }
-  // }
-
   const [openPopup, setOpenPopup] = useState(false);
 
   const HandleRemovePopUp = () => setOpenPopup(false);
   return (
-    <div className="bg-slider1  h-[800px]  ">
+    // <div className="realative h-screen">
+    //   <ImageSlider/>
+    // </div>
+    
+    <div className="bg-slider1  h-[800px] ">
       <nav>
-        <a href="index.html" className=" ps-32 pt-2">
-          <img src={logo} alt="" className="inline-flex items-baseline "></img>
+        <a href="index.html" className=" ps-10 pt-2 h-64" >
+          <img src={logo} alt="" className="inline-flex items-baseline w-36"></img>
         </a>
 
-        <ul className="inline-flex items-center float-right	pt-4 	">
-          <li className="pe-8	text-lg hover:text-black text-[#838489] ">
+        <ul className="inline-flex items-center float-right	pt-2 	">
+          <li className="pe-8	text-md  text-gray-300 ">
             <a href="/">
               <HiSpeakerphone className="inline-flex" />
               Become an Instructor
             </a>
           </li>
-          <li className="pe-8 text-lg hover:text-black	text-[#848587]">
+          <li className="pe-8 text-md text-gray-300">
             <a href="/">8989899989</a>
           </li>
-          <li className="pe-8 text-lg hover:text-black text-[#838489]	">
+          <li className="pe-8 text-md text-gray-300	">
             <a href="/">gani@hi.com</a>
           </li>
-          <li className="pe-12	text-lg hover:text-black  text-white">
+          <li className="pe-12 text-xl text-white">
 
             <div className="w-full p-5 flex justify-center items-center ">
               <div>
@@ -58,42 +63,35 @@ Login               </button>
           <PopUp openPopUp={openPopup} closePopUp={HandleRemovePopUp} />
         </div>
 
-        <ul className="inline-flex items-center float-right	 	-mt-[80px]">
-          <li className="pe-12	text-xl ">
-            <a href="/">
+        <ul className=' text-white py-4 inline-flex float-right items-center -mt-[120px] '>
+            <li className='pe-8 text-xl'>
               <Home />
-            </a>
-          </li>
-          <li className="pe-16 text-xl	">
-            <a href="/">
-            <Home />
-            </a>
-          </li>
-
-          <li className="pe-12 text-xl 	">
-            <a href="/">
-            <Home />
-            </a>
-          </li>
-          <li className="pe-12	text-xl hover:text-black">
-            <a href="/">
-            <Home />
-            </a>
-          </li>
-          <li className="pe-12	text-xl hover:text-black">
-            <a href="/">
-            <Home />
-            </a>
-          </li>
-          <li className="pe-12	text-md hover:text-black text-white">
-            <a href="/">CONTACTS</a>
-          </li>
-          <li className="pe-12	text-xl hover:text-black ">
-            <a href="/">
-              <IoIosSearch size={30} />
-            </a>
-          </li>
-        </ul>
+            </li>
+ 
+            <li className='pe-12 text-xl'>
+             <Course />
+            </li>
+ 
+            <li className='pe-12 text-xl'>
+              <Events />
+            </li>
+ 
+            <li className='pe-12 text-xl'>
+             <Page />
+            </li>
+ 
+            <li className='pe-12 text-xl'>
+              <Blog />
+            </li>
+ 
+            <li className='pe-12 text-xl'>
+              Contact
+            </li>
+ 
+            <li className='pe-16 text-xl'>
+              <IoIosSearch size={32} />
+            </li>
+          </ul>
       </nav>
 
       <div className="text-white font-Nunito text-center items-center pt-24">
@@ -106,7 +104,11 @@ Login               </button>
           Learn more
         </button>
       </div>
+      {/* <ImageSlider/> */}
+
     </div>
+
+
   );
 };
 

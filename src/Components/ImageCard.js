@@ -4,16 +4,20 @@ import user1 from "../../src/assets/user.png";
 import course from "../../src/assets/course.png";
 import student from "../../src/assets/student.png";
 import employee from "../../src/assets/employee.png";
+import { CiPlay1 } from "react-icons/ci";
 
-<link
-  rel="stylesheet"
-  href="https://cdn.tailgrids.com/tailgrids-fallback.css"
-/>;
+  <link
+    rel="stylesheet"
+    href="https://cdn.tailgrids.com/tailgrids-fallback.css"
+  />;
 
 const ImageCard = () => {
   return (
     <div className="">
-      <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20  -mt-[200px] ">
+
+
+
+      <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20  -mt-[240px] ">
         <div class="container ">
           <div class="flex flex-wrap -mx-4 ps-24 ">
             <div class="w-full md:w-1/2 xl:w-1/4  px-8  duration-200v hover:scale-105">
@@ -137,6 +141,20 @@ const ImageCard = () => {
           </div>
         </div>
       </section>
+      
+<div className='justify-center ps-48'>
+      <div className='relative	w-[1000px] h-[600px] 	'>
+    <img src="https://demo.createdbycocoon.com/moodle/edumy/15/pluginfile.php/472/block_cocoon_featured_video/content/2.jpg" ></img>
+    <a href='https://www.youtube.com/watch?v=UdDwKI4DcGw&ab_channel=CreatedbyCocoon'>
+
+   
+
+
+ <CiPlay1  size={2} className='absolute	 top-48 left-[460px] text-white p-6 bg-blue-300 rounded-full	 w-24 h-24 duration-200v hover:scale-105'/>
+</a>
+
+      </div>
+    </div>
     </div>
   );
 };

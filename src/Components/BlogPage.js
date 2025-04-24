@@ -11,9 +11,9 @@ import Blog4 from "../../src/assets/Blog4.jpg";
 const BlogPage = () => {
   return (
     <div className="">
-      <section className="  pb-10 lg:pb-20 bg-white">
+      <section className="  pb-10 lg:pb-20 bg-gray pt-16">
         <div class="container">
-            <div className="pb-12">
+            <div className="pb-12 ">
             <h1 className="text-6xl font-semibold font-Nunito text-center items-center pb-8 ">
  Blog</h1>
 <h1 className=" text-xl text-gray-500 font-Nunito text-center items-center ">
@@ -35,7 +35,7 @@ Cum doctus civibus efficiantur in imperdiet deterruisset.
                     </span>
                     </span>
                 </h1>
-                <div class="   ">
+                <div class=" ps-2 pb-4  ">
                    
 
                     <p class="pt-9 text-lg text-gray-500 text-body-color leading-relaxed ">
@@ -84,7 +84,7 @@ Admin User
                     </span>
                     </span>
                 </h1>
-                <div class="   ">
+                <div className="  pb-4 ps-2">
                    
 
                     <p class="pt-9 text-lg text-gray-500 text-body-color leading-relaxed ">
@@ -123,10 +123,8 @@ Admin User
             <div class="md:w-1/2 xl:w-1/3   border-1 border-blue	">
               <div class="bg-white rounded-lg overflow-hidden   ">
                 <img src={Blog4} alt="image"  className="w-full h-[300px]"/>
-                <h1 className="text-black">
-                    2010
-                </h1>
-                <div class="   ">
+               
+                <div class=" ps-2 pb-4  ">
                    
 
                     <p class="pt-9 text-lg text-gray-500 text-body-color leading-relaxed ">
