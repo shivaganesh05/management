@@ -99,7 +99,7 @@ const ImageCard = () => {
                         hover:text-primary
                         "
                     >
-                      esigns graphic
+                       graphic designs
                     </a>
                   </h3>
                   <p class="text-base text-body-color leading-relaxed ">
@@ -129,7 +129,7 @@ const ImageCard = () => {
                         hover:text-primary
                         "
                     >
-                      esigns graphic
+                       graphic designs
                     </a>
                   </h3>
                   <p class="text-base text-body-color leading-relaxed ">
